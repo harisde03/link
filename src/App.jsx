@@ -1,6 +1,7 @@
 import LinkGroup from "./components/LinkGroup";
 import LinkButton from "./components/LinkButton";
 import links from "../data/links.json";
+import meta from "../data/meta.json";
 
 import { Helmet } from "react-helmet";
 import { useState } from "react";
@@ -25,14 +26,16 @@ function App() {
             <div className="flex flex-row p-4 rounded-xl justify-between my-2">
               <div className="">
                 <h1 className="text-xl font-bold dark:text-white">
-                  Google Developer Student Club
+                  { meta.name }
                 </h1>
-                <p className="dark:text-white">Universitas Syiah Kuala</p>
+                <p className="dark:text-white">
+                  { meta.subname }
+                </p>
               </div>
               <div>
                 <img
                   className="rounded-full w-12 h-12"
-                  src="profile-picture.jpg"
+                  src={ meta.profile }
                   alt="profile"
                 />
               </div>
