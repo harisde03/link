@@ -46,7 +46,7 @@ function App() {
                 key={linkGroup.groupName}
                 groupName={linkGroup.groupName}
               >
-                {linkGroup.data.map((link) => (
+                {linkGroup.links.map((link) => (
                   <LinkButton key={link.title} {...link} />
                 ))}
               </LinkGroup>
