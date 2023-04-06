@@ -13,5 +13,8 @@
         "dynamicLinks": true
       }
     ]
+  },
+  "remoteconfig": {
+    "template": "data/data.json"
   }
 }

@@ -1,6 +1,6 @@
 import LinkGroup from "./components/LinkGroup";
 import LinkButton from "./components/LinkButton";
-import links from "../data/links.json";
+import data from "../data/data.json";
 import meta from "../data/meta.json";
 
 import { Helmet } from "react-helmet";
@@ -41,12 +41,12 @@ function App() {
               </div>
             </div>
 
-            {links.map((linkGroup) => (
+            {data.map((linkGroup) => (
               <LinkGroup
                 key={linkGroup.groupName}
                 groupName={linkGroup.groupName}
               >
-                {linkGroup.links.map((link) => (
+                {linkGroup.data.map((link) => (
                   <LinkButton key={link.title} {...link} />
                 ))}
               </LinkGroup>
